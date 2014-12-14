@@ -3,20 +3,13 @@
 @charset "utf-8";
 @import "normalize";
 
-// Our variables
 $base-font-family: Proxima Nova, Helvetica, Arial, sans-serif;
 
-$text-color:       #7C7C79;
 $background-color: #fcfaf4;
-$accent-bg-color:     #ff685d;
-$accent-fg-color:     darken($accent-bg-color, 15%);
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
+$accent-bg-color:  #ff685d;
+$accent-fg-color:  darken($accent-bg-color, 10%);
+$brown-color:      #a98;
+$text-color:       darken($brown-color, 30%);
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -59,42 +52,44 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: normal;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+svg {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
 }
 
 a {
-  color: $accent-fg-color;
+  color: $brown-color;
   text-decoration: none;
+  transition: color 0.1s;
+
+  svg path {
+    fill: $brown-color;
+    transition: fill 0.2s;
+  }
 
   &:hover {
-    color: darken($accent-fg-color, 20%);
-  }
-}
+    color: $accent-fg-color;
 
-blockquote {
-  border-left: 4px solid $accent-bg-color;
-  padding-left: 0.5em;
-  font-size: 1.1em;
-  font-style: italic;
+    svg path {
+      fill: $accent-bg-color;
+    }
+  }
 }
 
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 3%;
-}
-
-.icon {
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-
-    path {
-      fill: $text-color;
-    }
-  }
 }
 
 header {
@@ -110,11 +105,11 @@ header {
     a {
       display: inline-block;
       text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.4);
+      color: rgba(0, 0, 0, 0.5);
       padding: 1em 2em;
       transition: background-color 0.1s;
       &:hover {
-        color: rgba(0, 0, 0, 0.7);
+        color: black;
         background-color: rgba(0, 0, 0, 0.1);
       }
     }
@@ -127,18 +122,18 @@ header {
     font-size: 4em;
     letter-spacing: -1px;
     font-weight: 300;
-    color: rgba(0, 0, 0, 0.4);
-  }
-
-  p {
-    margin: 2em 0;
-    font-size: 1.8em;
-    font-weight: 300;
     color: rgba(0, 0, 0, 0.5);
   }
 
+  p {
+    margin: 1em 0 2em 0;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
   em {
-    color: rgba(0, 0, 0, 0.8);
+    color: black;
   }
 }
 
@@ -147,152 +142,50 @@ hr {
   width: 5em;
   margin: 1em auto;
   border: none;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 3px;
 }
 
-/**
- * Site footer
- */
- .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: 1em 0;
-}
+.site-footer {
+  padding: 2em 0;
+  text-align: center;
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: 1em / 2;
-}
-
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.footer-col-wrapper {
-  font-size: 15px;
-  color: $grey-color;
-  margin-left: -1em / 2;
-}
-
-.footer-col {
-  float: left;
-  margin-bottom: 1em / 2;
-  padding-left: 1em / 2;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{1em} / 2));
-  width:         calc(35% - (#{1em} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{1em} / 2));
-  width:         calc(20% - (#{1em} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{1em} / 2));
-  width:         calc(45% - (#{1em} / 2));
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{1em} / 2));
-    width:         calc(50% - (#{1em} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{1em} / 2));
-    width:         calc(100% - (#{1em} / 2));
+  a {
+    padding: 1em;
+    display: inline-block;
   }
 }
 
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{1em} / 2));
-    width:         calc(100% - (#{1em} / 2));
-  }
+.skills {
+  padding: 4em 0;
+  overflow: hidden;
+  text-align: center;
 }
 
-
-
-/**
- * Page content
- */
- .page-content {
-  padding: 1em 0;
-}
-
-.page-heading {
-  font-size: 20px;
-}
-
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: 1em;
-  }
-}
-
-.post-meta {
-  font-size: 0.8em;
-  color: $grey-color;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
- .post-header {
-  margin-bottom: 1em;
-}
-
-.post-title {
-  font-size: 42px;
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    font-size: 36px;
-  }
-}
-
-.post-content {
-  margin-bottom: 1em;
+.skill {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  padding: 2em 0;
 
   h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 2em 0 0 0;
   }
 
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-laptop) {
-      font-size: 22px;
+  svg {
+    width: 96px;
+    height: 96px;
+    path, rect {
+      fill: $brown-color;
     }
   }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+  h2 {
+    color: darken($brown-color, 10%);
   }
 }
+
+// @include media-query($on-laptop) {
+//   font-size: 18px;
+// }
