@@ -70,7 +70,7 @@ svg {
 a {
   color: $brown-color;
   text-decoration: none;
-  transition: color 0.1s;
+  transition: color 0.2s, border-color 0.2s;
 
   svg path {
     fill: $brown-color;
@@ -105,7 +105,7 @@ header {
     a {
       display: inline-block;
       text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.5);
+      color: rgba(0, 0, 0, 0.6);
       padding: 1em 2em;
       transition: background-color 0.1s;
       &:hover {
@@ -122,7 +122,7 @@ header {
     font-size: 4em;
     letter-spacing: -1px;
     font-weight: 300;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.6);
   }
 
   p {
@@ -142,11 +142,11 @@ hr {
   width: 5em;
   margin: 1em auto;
   border: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 3px;
 }
 
-.site-footer {
+footer {
   padding: 2em 0;
   text-align: center;
 
@@ -164,7 +164,7 @@ hr {
 
 .skill {
   display: inline-block;
-  width: 200px;
+  width: 160px;
   text-align: center;
   padding: 2em 0;
 
@@ -175,14 +175,38 @@ hr {
   }
 
   svg {
-    width: 96px;
-    height: 96px;
+    width: 48px;
+    height: 48px;
     path, rect {
       fill: $brown-color;
     }
   }
   h2 {
     color: darken($brown-color, 10%);
+  }
+}
+
+.project {
+  color: white;
+  padding: 5% 10%;
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0 0 0.5em black;
+
+  a {
+    border-bottom: 1px dotted white;
+    color: white;
+
+    &:hover {
+      color: $accent-fg-color;
+      border-color: $accent-fg-color;
+    }
+  }
+
+  &.updown {
+    background: #20262f url('/images/updown-back.jpg') no-repeat top center;
+    background-size: cover;
   }
 }
 
