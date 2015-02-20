@@ -1,11 +1,42 @@
 ---
 layout: default
 ---
-
 {% include skills.html %}
-<h1 class="page-heading">I've worked on..</h1>
-{% for project in site.projects %}
-  <div class="project {{ project.name }}">
-    {{ project.output }}
+<h2 class="page-heading">I've worked on..</h2>
+<div class="wrapper projects grid">
+  <div class="grid-1">
+    <a href="https://updown.io" target="blank">
+      <div class="project dark updown">
+        <h3>updown.io</h3>
+        <p>
+          An HTTP monitoring service (like Pingdom)<br/>
+          with a clean UI and a cheap pricing.
+        </p>
+      </div>
+    </a>
   </div>
-{% endfor %}
+
+  <div class="grid-2">
+    <a href="https://github.com/intrepidd/working_hours" target="blank">
+      <div class="project working_hours">
+        <h3>working hours</h3>
+        <p>
+          A modern ruby gem allowing to do time<br />
+          calculation with business / working hours.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <div class="grid-2">
+    <a href="https://github.com/intrepidd/working_hours" target="blank">
+      <div class="project working_hours">
+        <h3>working hours</h3>
+        <p>
+          A modern ruby gem allowing to do time<br />
+          calculation with business / working hours.
+        </p>
+      </div>
+    </a>
+  </div>
+</div>

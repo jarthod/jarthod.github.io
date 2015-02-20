@@ -7,9 +7,9 @@ $base-font-family: Proxima Nova, Helvetica, Arial, sans-serif;
 
 $background-color: #fcfaf4;
 $accent-bg-color:  #ff685d;
-$accent-fg-color:  darken($accent-bg-color, 10%);
+$accent-fg-color:  shade($accent-bg-color, 10%);
 $brown-color:      #a98;
-$text-color:       darken($brown-color, 30%);
+$text-color:       shade($brown-color, 30%);
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -44,6 +44,7 @@ body {
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
+  min-width: 350px;
 }
 
 img {
@@ -55,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-h1 {
+h2 {
   text-align: center;
   font-size: 2.5em;
 }
@@ -84,12 +85,6 @@ a {
       fill: $accent-bg-color;
     }
   }
-}
-
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 3%;
 }
 
 header {
@@ -186,30 +181,96 @@ footer {
   }
 }
 
+.projects {
+
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid {
+  overflow: hidden;
+  padding: 0 3%;
+}
+
+.grid-1 {
+  margin-bottom: 3%;
+}
+
+.grid-2 {
+  float: left;
+  width: 48.5%;
+}
+
+.grid-2 + .grid-2 {
+  margin-left: 3%;
+}
+
 .project {
-  color: white;
-  padding: 5% 10%;
-  font-size: 2em;
-  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 8% 0;
   text-align: center;
-  text-shadow: 0 0 0.5em black;
+  background: $accent-bg-color;
 
-  a {
-    border-bottom: 1px dotted white;
+  h3, p {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  h3 {
+    font-size: 4em;
+    font-weight: 300;
+    padding-right: 4%;
+    line-height: 1.1em;
+    text-align: right;
+  }
+
+  p {
+    font-size: 1.2em;
+    padding-left: 4.5%;
+    text-align: left;
+    border-left: 3px solid rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover {
+  }
+
+  &.dark {
+    text-shadow: 0 0 10px black;
     color: white;
-
-    &:hover {
-      color: $accent-fg-color;
-      border-color: $accent-fg-color;
+    p {
+      border-color: rgba(255, 255, 255, 0.8)
     }
   }
 
   &.updown {
-    background: #20262f url('/images/updown-back.jpg') no-repeat top center;
+    background: #20262f url('/images/updown-back.jpg') no-repeat center center;
     background-size: cover;
   }
 }
 
-// @include media-query($on-laptop) {
-//   font-size: 18px;
-// }
+@include media-query(950px) {
+  .project {
+    h3, p {
+      display: block;
+      text-align: center;
+      padding: 0;
+    }
+    p {
+      border-left: none;
+      &:before {
+        content: '';
+        display: block;
+        width: 5em;
+        margin: 1em auto;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 3px;
+      }
+    }
+  }
+}
