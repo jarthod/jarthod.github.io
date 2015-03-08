@@ -1,15 +1,11 @@
----
----
-@charset "utf-8";
 @import "normalize";
 
 $base-font-family: Proxima Nova, Helvetica, Arial, sans-serif;
 
-$background-color: #fcfaf4;
-$accent-bg-color:  #ff685d;
-$accent-fg-color:  shade($accent-bg-color, 10%);
-$brown-color:      #a98;
-$text-color:       shade($brown-color, 30%);
+$background: #fcfaf4;
+$red: #ff685d;
+$brown: #a98;
+$text-color: darken($brown, 30%);
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -42,9 +38,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $text-color;
-  background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
+  background-color: $background;
   min-width: 350px;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 img {
@@ -58,7 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 70px;
+}
+
+h2.suspended {
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $red;
+  margin: -1.32em 0 0.8em 0;
 }
 
 svg {
@@ -69,26 +74,26 @@ svg {
 }
 
 a {
-  color: $brown-color;
+  color: $red;
   text-decoration: none;
   transition: color 0.2s, border-color 0.2s;
 
   svg path {
-    fill: $brown-color;
+    fill: $red;
     transition: fill 0.2s;
   }
 
   &:hover {
-    color: $accent-fg-color;
+    color: $red;
 
     svg path {
-      fill: $accent-bg-color;
+      fill: $red;
     }
   }
 }
 
 header {
-  background-color: $accent-bg-color;
+  background-color: $red;
   padding: 1em 0;
   font-size: 1.3em;
   text-align: center;
@@ -151,10 +156,15 @@ footer {
   }
 }
 
-.skills {
+#skills {
   padding: 4em 0;
-  overflow: hidden;
   text-align: center;
+  position: relative;
+  background-color: $red;
+
+  h2 {
+    color: $background;
+  }
 }
 
 .skill {
@@ -163,7 +173,8 @@ footer {
   text-align: center;
   padding: 2em 0;
 
-  h2 {
+  h3 {
+    color: rgba(0, 0, 0, 0.6);
     font-size: 1.2em;
     text-transform: uppercase;
     margin: 2em 0 0 0;
@@ -173,16 +184,16 @@ footer {
     width: 48px;
     height: 48px;
     path, rect {
-      fill: $brown-color;
+      fill: rgba(0, 0, 0, 0.6);
     }
   }
   h2 {
-    color: darken($brown-color, 10%);
+    color: darken($red, 10%);
   }
 }
 
-.projects {
-
+#work {
+  padding: 4em 0;
 }
 
 .wrapper {
@@ -192,85 +203,91 @@ footer {
 
 .grid {
   overflow: hidden;
-  padding: 0 3%;
+  padding: 2px 3%;
 }
 
 .grid-1 {
+  clear: both;
   margin-bottom: 3%;
 }
 
 .grid-2 {
   float: left;
   width: 48.5%;
+  margin-bottom: 3%;
 }
 
 .grid-2 + .grid-2 {
   margin-left: 3%;
 }
 
+.projects a:focus {
+  outline: 2px solid white;
+}
+
 .project {
   color: rgba(0, 0, 0, 0.6);
   padding: 8% 0;
   text-align: center;
-  background: $accent-bg-color;
+  background: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.1s;
 
   h3, p {
-    display: inline-block;
-    box-sizing: border-box;
+    display: block;
     margin: 0;
-    vertical-align: middle;
+    text-align: center;
   }
 
   h3 {
     font-size: 4em;
     font-weight: 300;
-    padding-right: 4%;
-    line-height: 1.1em;
-    text-align: right;
+    line-height: 1.1;
   }
 
   p {
     font-size: 1.2em;
-    padding-left: 4.5%;
-    text-align: left;
-    border-left: 3px solid rgba(0, 0, 0, 0.6);
+    &:before {
+      content: '';
+      display: block;
+      width: 5em;
+      margin: 1em auto;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      height: 3px;
+    }
   }
 
   &:hover {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   &.dark {
     text-shadow: 0 0 10px black;
     color: white;
-    p {
-      border-color: rgba(255, 255, 255, 0.8)
+    p:before {
+      background-color: rgba(255, 255, 255, 0.8);
     }
   }
 
   &.updown {
-    background: #20262f url('/images/updown-back.jpg') no-repeat center center;
+    background: #222 url('/images/updown-back.jpg') no-repeat top center;
+    background-size: cover;
+  }
+
+  &.defuzeme {
+    background: #222 url('/images/defuzeme.png') no-repeat top center;
     background-size: cover;
   }
 }
 
 @include media-query(950px) {
-  .project {
-    h3, p {
-      display: block;
-      text-align: center;
-      padding: 0;
-    }
-    p {
-      border-left: none;
-      &:before {
-        content: '';
-        display: block;
-        width: 5em;
-        margin: 1em auto;
-        border: none;
-        background-color: rgba(255, 255, 255, 0.8);
-        height: 3px;
-      }
-    }
+  .grid-2 {
+    float: none;
+    width: auto;
+    margin-bottom: 3%;
+  }
+
+  .grid-2 + .grid-2 {
+    margin-left: inherit;
   }
 }
