@@ -39,7 +39,7 @@ body {
   line-height: 1.5;
   color: $text-color;
   background-color: $background;
-  min-width: 350px;
+  min-width: 320px;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -56,14 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   text-align: center;
-  font-size: 70px;
+  font-size: 4em;
 }
 
 h2.suspended {
   font-weight: 300;
   text-transform: uppercase;
   color: $red;
-  margin: -1.32em 0 0.8em 0;
+  margin: -1.41em 0 0.8em 0;
 }
 
 svg {
@@ -169,7 +169,7 @@ footer {
 
 .skill {
   display: inline-block;
-  width: 160px;
+  width: 10em;
   text-align: center;
   padding: 2em 0;
 
@@ -289,5 +289,15 @@ footer {
 
   .grid-2 + .grid-2 {
     margin-left: inherit;
+  }
+}
+
+@include media-query(550px) {
+  body {
+    font-size: 13px;
+  }
+
+  header .site-title {
+    font-size: 3em;
   }
 }
