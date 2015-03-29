@@ -1,0 +1,9 @@
+<div id="experience">
+  <h2 class="suspended">Experience</h2>
+  {% for ex in site.data.experiences %}
+    <div class="{{ ex.type }}">
+      {{ ex.title }}
+      {{ ex.company }}
+    </div>
+  {% endfor %}
+</div>
