@@ -1,7 +1,5 @@
 @import "normalize";
 
-$base-font-family: Proxima Nova, Helvetica, Arial, sans-serif;
-
 $background: #fcfaf4;
 $red: #ff685d;
 $brown: #a98;
@@ -9,20 +7,20 @@ $text-color: darken($brown, 30%);
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/ProximaNova-Reg.eot');
-  src: url('/fonts/ProximaNova-Reg.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/ProximaNova-Reg.svg#font') format('svg'),
-  url('/fonts/ProximaNova-Reg.ttf') format('truetype');
+  src: url('fonts/ProximaNova-Reg.eot');
+  src: url('fonts/ProximaNova-Reg.eot?#iefix') format('embedded-opentype'),
+  url('fonts/ProximaNova-Reg.svg#font') format('svg'),
+  url('fonts/ProximaNova-Reg.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('/fonts/ProximaNova-Thin.eot');
-  src: url('/fonts/ProximaNova-Thin.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/ProximaNova-Thin.svg#font') format('svg'),
-  url('/fonts/ProximaNova-Thin.ttf') format('truetype');
+  src: url('fonts/ProximaNova-Thin.eot');
+  src: url('fonts/ProximaNova-Thin.eot?#iefix') format('embedded-opentype'),
+  url('fonts/ProximaNova-Thin.svg#font') format('svg'),
+  url('fonts/ProximaNova-Thin.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -34,7 +32,7 @@ $text-color: darken($brown, 30%);
 }
 
 body {
-  font-family: $base-font-family;
+  font-family: Proxima Nova, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: $text-color;
@@ -57,9 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   text-align: center;
   font-size: 4em;
-}
-
-h2.suspended {
   font-weight: 300;
   text-transform: uppercase;
   color: $red;
@@ -270,12 +265,12 @@ footer {
   }
 
   &.updown {
-    background: #222 url('/images/updown-back.jpg') no-repeat top center;
+    background: #222 image-url('/images/updown-back.jpg') no-repeat top center;
     background-size: cover;
   }
 
   &.defuzeme {
-    background: #222 url('/images/defuzeme.png') no-repeat top center;
+    background: #222 image-url('/images/defuzeme.png') no-repeat top center;
     background-size: cover;
   }
 }

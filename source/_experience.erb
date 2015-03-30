@@ -1,0 +1,9 @@
+<div id="experience">
+  <h2>Experience</h2>
+  <% data.experiences.each do |ex| %>
+    <div class="<%= ex.type %>">
+      <%= ex.title %>
+      <%= ex.company %>
+    </div>
+  <% end %>
+</div>
