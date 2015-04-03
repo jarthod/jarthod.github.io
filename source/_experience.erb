@@ -1,9 +1,29 @@
+<%
+  end_year = Date.today.year
+  start_year = 2006
+  origin = Date.new(end_year, 12, 31)
+%>
 <div id="experience">
   <h2>Experience</h2>
-  <% data.experiences.each do |ex| %>
-    <div class="<%= ex.type %>">
-      <%= ex.title %>
-      <%= ex.company %>
+  <div class="wrapper">
+    <div class="timeline">
+      <% end_year.downto(start_year) do |year| %>
+        <div class="year"><%= year %></div>
+      <% end %>
     </div>
-  <% end %>
+    <% data.experiences.each do |ex| %>
+      <% top = ex.end_at ? origin - ex.end_at : 0 %>
+      <% duration = (ex.end_at || origin) - ex.start_at %>
+      <% if duration == 0 %>
+        <div class="experience event <%= ex.pos %>" style="top: <%= top*12/365.25-1 %>em; height: 2em">
+          <%= ex.title %>
+        </div>
+      <% else %>
+        <div class="experience <%= ex.pos %> <%= 'ongoing' if top == 0 %>" style="top: <%= top*12/365.25 %>em; height: <%= duration*12/365.25 %>em;">
+          <%= ex.title %>
+          <%= ex.description %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>

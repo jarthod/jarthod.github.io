@@ -277,6 +277,62 @@ footer {
 
 #experience {
   padding: 4em 0;
+  text-align: center;
+  .wrapper {
+    position: relative;
+  }
+  .timeline {
+    margin-left: (900px-50px)/2;
+    padding-top: 1.5em;
+  }
+  .year {
+    color: $red;
+    text-align: center;
+    width: 50px;
+    line-height: 3em;
+    &:before {
+      display: block;
+      margin: 0 auto;
+      content: '';
+      background-color: transparentize($red, 0.8);
+      width: 3px;
+      height: 9em;
+    }
+  }
+  .experience {
+    position: absolute;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    text-align: right;
+  }
+  .right {
+    right: 0;
+    text-align: left;
+  }
+  .ongoing {
+    padding-top: 6em;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.05) 70%, transparent 100%);
+  }
+  .event {
+    background: none;
+    padding: 0;
+    &.right:before {
+      content: '★';
+      color: $red;
+      display: inline-block;
+      width: 1.5em;
+      margin-left: -1.5em;
+    }
+    &.left:after {
+      content: '★';
+      color: $red;
+      display: inline-block;
+      width: 1.5em;
+      margin-right: -1.5em;
+    }
+  }
 }
 
 @include media-query(950px) {
