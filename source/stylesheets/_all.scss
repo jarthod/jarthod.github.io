@@ -282,13 +282,14 @@ footer {
     position: relative;
   }
   .timeline {
-    margin-left: (900px-50px)/2;
+    margin-left: 50%;
     padding-top: 1.5em;
   }
   .year {
     color: $red;
     text-align: center;
     width: 50px;
+    margin-left: -25px;
     line-height: 3em;
     &:before {
       display: block;
@@ -301,11 +302,12 @@ footer {
   }
   .experience {
     position: absolute;
-    width: 400px;
+    width: 45%;
     background: rgba(0, 0, 0, 0.05);
-    padding: 0.5em 1em;
+    padding: 0.5em 0.7em;
     box-sizing: border-box;
     text-align: right;
+    overflow: hidden;
   }
   .right {
     right: 0;
@@ -321,17 +323,25 @@ footer {
     &.right:before {
       content: '★';
       color: $red;
-      display: inline-block;
-      width: 1.5em;
-      margin-left: -1.5em;
+      display: block;
+      float: left;
+      width: 1.3em;
     }
-    &.left:after {
+    &.left:before {
       content: '★';
       color: $red;
-      display: inline-block;
-      width: 1.5em;
-      margin-right: -1.5em;
+      display: block;
+      float: right;
+      width: 1.3em;
     }
+  }
+  strong {
+    font-weight: normal;
+    color: black;
+  }
+  p {
+    margin: 0;
+    font-size: 0.9em;
   }
 }
 
@@ -345,6 +355,7 @@ footer {
   .grid-2 + .grid-2 {
     margin-left: inherit;
   }
+
 }
 
 @include media-query(550px) {
@@ -354,5 +365,11 @@ footer {
 
   header .site-title {
     font-size: 3em;
+  }
+
+  #experience {
+    .experience {
+      line-height: 1.2em;
+    }
   }
 }

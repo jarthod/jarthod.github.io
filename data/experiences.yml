@@ -1,161 +1,115 @@
 - title: 'French Baccalaureate, scientific section'
-  company: 'Lycée les Iris'
-  start_at: 2007-2-15
+  start_at: 2007-6-15
   end_at: 2007-6-15
   pos: right
-  description: '(equivalent to A levels with Honors)'
-  image: 'bac.png'
+  description: 'Equivalent to A levels with Honors'
 
-- title: 'First year at Epitech'
-  company: 'Epitech'
-  company_url: 'http://epitech.net'
-  start_at: 2007-10-1
-  end_at: 2008-6-30
-  pos: right
-  description: 'Advanced C programming, Raytracing, SQL, Shell'
-  image: 'epitech.png'
-
-- title: 'Second year at Epitech'
-  company: 'Epitech'
-  company_url: 'http://epitech.net'
-  start_at: 2009-1-1
-  end_at: 2009-7-31
-  pos: right
-  description: 'PHP, HTML, CSS, Networking, <a href="http://sourceforge.net/projects/collision/">3D Game</a>, Security'
-  image: 'epitech.png'
-
-- title: 'Third year at Epitech'
-  company: 'Epitech'
-  company_url: 'http://epitech.net'
-  start_at: 2009-9-1
-  end_at: 2010-4-30
-  pos: right
-  description: 'Advanced C++, evented programming, Qt GUI, Advanced networking'
-  image: 'epitech.png'
-  ratio: 0.6
-
-- title: 'Fourth year at Epitech'
-  company: 'Epitech'
-  company_url: 'http://epitech.net'
-  start_at: 2010-11-1
-  end_at: 2011-7-30
-  pos: right
-  description: 'Artificial Intelligence, security, MASM32 malicious code, Law, business, <a href="http://defuze.me">EIP</a>'
-  image: 'epitech.png'
-  ratio: 0.4
-
-- title: 'Fifth year at Epitech'
-  company: 'Epitech'
-  company_url: 'http://epitech.net'
-  start_at: 2011-9-1
-  end_at: 2012-2-29
-  pos: right
-  description: 'Learning agent, neural network, <a href="http://defuze.me">EIP</a>'
-  image: 'epitech.png'
-  ratio: 0.4
-
-- title: 'Web application / Expert system'
-  company: 'Wopata'
-  company_url: 'http://wopata.com'
-  start_at: 2008-7-1
-  end_at: 2008-12-21
-  pos: left
-  description: 'Ruby, Ruby on Rails, Git, Agile methodology and a lot more'
-  image: 'wopata.png'
-
-- title: 'Web service / Collective intelligence'
-  company: 'Wopata'
-  company_url: 'http://wopata.com'
-  start_at: 2010-1-17
-  end_at: 2010-4-30
-  pos: left
-  description: 'Ruby on Rails, RESTfull API architecture, collective intelligence and project managing'
-  image: 'wopata.png'
-  ratio: 0.4
-
-- title: 'Web service / Collective intelligence'
-  company: 'Wopata'
-  company_url: 'http://wopata.com'
-  start_at: 2010-5-3
-  end_at: 2010-10-31
-  pos: left
-  description: 'Ruby on Rails, RESTfull API architecture, collective intelligence and project managing (<a href="http://happeal.fr">Happeal</a> project)'
-  image: 'wopata.png'
-
-- title: 'Quantitative trading support'
-  company: 'Société Générale Corporate & Investment Banking'
-  company_url: 'http://sgcib.com'
-  start_at: 2010-11-15
-  end_at: 2011-7-15
-  pos: left
-  description: 'Automated trading (algorithm), support tools (C++ & Ruby) and trading strategy analysis'
-  image: 'sgcib.png'
-  ratio: 0.6
-
-- title: 'Ruby on Rails internship'
-  company: 'Dimelo'
-  company_url: 'http://dimelo.com'
-  start_at: 2012-3-1
-  end_at: 2012-8-31
-  pos: left
-  description: 'Rails web application development, optimization & scalability with mongoDB. Evented API stream.'
-  image: 'dimelo.png'
-
-- title: 'Web full stack engineer'
-  company: 'Dimelo'
-  company_url: 'http://dimelo.com'
-  start_at: 2012-10-1
-  pos: left
-  description: 'Rails web application development, optimization & scalability with mongoDB. Event oriented architecture.'
-  image: 'dimelo.png'
-
-- title: 'Bronze medalist at the IOI 2007'
-  company: 'IOI'
+- title: 'Bronze medalist at the <a href="http://www.france-ioi.org/ioi/resultats.php">IOI 2007</a>'
   start_at: 2007-8-15
   end_at: 2007-8-15
   pos: left
   description: 'International algorithmic programming contest'
-  image: 'ioi.png'
+
+- title: 'First year at Epitech'
+  start_at: 2007-10-1
+  end_at: 2008-6-30
+  pos: right
+  description: 'Advanced C programming, Raytracing, SQL, Shell, Parsers, AST'
+
+- title: 'Internship at <a href="http://wopata.com">Wopata</a>'
+  start_at: 2008-7-1
+  end_at: 2008-12-21
+  pos: left
+  description: 'Ruby, Rails, UI, HTML, CSS, JS, SVG, expert system'
+
+- title: 'Second year at Epitech'
+  start_at: 2009-1-1
+  end_at: 2009-7-31
+  pos: right
+  description: 'PHP, HTML, CSS, Networking, Security, FTP, x86 ASM, <a href="http://sourceforge.net/projects/collision/">Multiplayer 3D Game</a>'
 
 - title: 'Winning team at the “Codathlon” coding contest'
-  company: 'Codathlon'
   start_at: 2009-4-15
   end_at: 2009-4-15
   pos: left
-  description: 'This was a local contest for all Bordeaux based IT schools, the goal was to build in 24h (in teams of 5, one team per school) a CMS template following the latest accessibility specifications (WCAG 2.0 / AA)'
-  image: 'codathlon.png'
+  description: 'This was a local contest for Bordeaux based IT schools, the goal was to build in 24h (in teams of 5, one team per school) a CMS template implementing the latest accessibility specifications (WCAG 2.0 / AA)'
+
+- title: 'Third year at Epitech'
+  start_at: 2009-9-1
+  end_at: 2010-4-30
+  pos: right
+  description: 'Advanced C++ programming, event loop, Qt GUI, FTP, more networking, audio streaming'
+
+- title: 'Developer at <a href="http://wopata.com">Wopata</a>'
+  start_at: 2010-1-5
+  end_at: 2010-4-30
+  pos: left
+  description: 'Ruby, Rails, API, JSON, machine learning'
+
+- title: 'Internship at <a href="http://wopata.com">Wopata</a>'
+  start_at: 2010-5-3
+  end_at: 2010-10-31
+  pos: left
+  description: 'Ruby, Rails, API, Objective-C, iOS, machine learning'
 
 - title: 'Winning team at the “Codathlon” coding contest'
-  company: 'Codathlon'
   start_at: 2010-6-15
   end_at: 2010-6-15
   pos: right
-  description: 'This was a local contest for all Bordeaux based IT schools, the goal was to build in 24h (in teams of 5, one team per school) a web site following given specifications'
-  image: 'codathlon.png'
+  description: 'This was a local contest for Bordeaux based IT schools, the goal was to build in 24h (in teams of 5, one team per school) a web site following given specifications'
 
-- title: '4<sup>th</sup> place at the “Code of Duty 1” coding contest'
-  company: 'Criteo'
-  company_url: 'http://criteo.fr'
-  start_at: 2011-8-15
-  end_at: 2011-8-15
+- title: 'Fourth year at Epitech'
+  start_at: 2010-11-1
+  end_at: 2011-7-30
+  pos: right
+  description: 'Artificial Intelligence, security, MASM32 malicious code, law, business, graduation project: <a href="http://defuzeme.herokuapp.com">defuze.me</a>'
+
+- title: 'Internship at <a href="http://sgcib.com">SGCIB</a>'
+  start_at: 2010-11-15
+  end_at: 2011-7-15
   pos: left
-  description: 'It was a contest organized by the company “Criteo” in Paris. The subject concerned massive data processing software; there were more than 1000 submissions'
-  image: 'criteo.png'
+  description: 'Quantitative trading support: automated trading (algorithm), support tools (C++ & Ruby) and trading strategy analysis'
 
-- title: 'Winning project of the EIP trophy 2011'
-  company: 'defuze.me'
-  company_url: 'http://defuze.me'
+- title: '4<sup>th</sup> place at the <a href="https://campus.efrei.fr/campus/file.php/1/code-of-duty.jpg">Code of Duty</a> coding contest'
+  start_at: 2011-8-30
+  end_at: 2011-8-30
+  pos: left
+
+- title: 'Fifth year at Epitech'
+  start_at: 2011-9-1
+  end_at: 2012-2-29
+  pos: right
+  description: 'Learning agent, neural network, graduation project: <a href="http://defuzeme.herokuapp.com">defuze.me</a>'
+
+- title: 'Winning project of the EIP trophy – <a href="http://defuzeme.herokuapp.com">defuze.me</a>'
   start_at: 2011-11-18
   end_at: 2011-11-18
   pos: left
-  description: '<a href="http://defuze.me">defuze.me</a> won the EIP trophy organised by Epitech, among 11 others projects already selected for their inovation'
-  image: 'defuzeme.png'
+  description: 'The EIP trophy is organized by Epitech to reward the most promising projects.'
 
-- title: 'Winning hack demoed at UNESCO'
-  company: 'Music Hack Paris'
-  company_url: 'http://www.musichackparis.org/'
+- title: 'Developer at <a href="http://dimelo.com">Dimelo</a>'
+  start_at: 2012-3-1
+  end_at: 2012-8-31
+  pos: left
+  description: 'Ruby, Rails, MongoDB, Social Networks API'
+
+- title: 'Winning hack demoed at UNESCO – <a href="https://github.com/jarthod/e2midi">e2midi</a>'
   start_at: 2012-04-22
   end_at: 2012-04-22
   pos: right
-  description: '<a href="https://github.com/jarthod/e2midi">e2midi</a> is a hack made with a few friends. is has been selected to be demoed for the International Jazz Day at UNESCO.'
-  image: 'music-hack-paris.png'
+  description: 'e2midi is a hack made with a few friends. It has been selected to be demoed for the International Jazz Day at UNESCO.'
+
+- title: 'Lead developer at <a href="http://dimelo.com">Dimelo</a>'
+  start_at: 2012-10-1
+  pos: left
+  description: 'Ruby, Rails, UI/UX, JS, MongoDB, Redis, WebSockets, WebHooks, security, API, SOA, advanced HTML & CSS, evented architecture, network, optimization & scalability'
+
+- title: 'Reached round 2 at the <a href="https://code.google.com/codejam/">Google Code Jam</a> 2013'
+  start_at: 2013-06-7
+  end_at: 2013-06-7
+  pos: right
+
+- title: 'Reached round 2 at the <a href="https://code.google.com/codejam/">Google Code Jam</a> 2014'
+  start_at: 2014-06-10
+  end_at: 2014-06-10
+  pos: right
