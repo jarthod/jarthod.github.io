@@ -99,7 +99,7 @@
   pos: right
   description: 'e2midi is a hack made with a few friends. It has been selected to be demoed for the International Jazz Day at UNESCO.'
 
-- title: 'Lead developer at <a href="http://dimelo.com">Dimelo</a>'
+- title: 'Head of R&D at <a href="http://dimelo.com">Dimelo</a>'
   start_at: 2012-10-1
   pos: left
   description: 'Ruby, Rails, UI/UX, JS, MongoDB, Redis, WebSockets, WebHooks, security, API, SOA, advanced HTML & CSS, evented architecture, network, optimization & scalability'
