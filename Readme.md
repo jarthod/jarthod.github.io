@@ -23,7 +23,7 @@ git add . && git commit -m "new version" && git push
 ## Changelog
 _(excluding minor design and content changes)_
 
-2020-03: v2 using simpler tools. Removing middleman, custom font, GA
-2015-04: Add timeline visualisation
-2015-03: Switch to `middleman` for more simplicity
-2014-12: Initial version using `jekyll` and github pages
+- 2020-03: v2 using simpler tools. Removing middleman, custom font, GA
+- 2015-04: Add timeline visualisation
+- 2015-03: Switch to `middleman` for more simplicity
+- 2014-12: Initial version using `jekyll` and github pages

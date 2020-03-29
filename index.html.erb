@@ -33,15 +33,12 @@
         text-decoration: none;
         transition: color 0.2s, border-color 0.2s;
       }
-      a svg path {
-        fill: <%= red %>;
-        transition: fill 0.2s;
-      }
       svg {
         display: inline-block;
         width: 48px;
         height: 48px;
         vertical-align: middle;
+        fill: rgba(0, 0, 0, 0.6);
       }
       strong {
         font-weight: normal;
@@ -97,7 +94,7 @@
       .grid { overflow: hidden; padding: 2px 3%; }
       .grid-1 { clear: both; margin-bottom: 3%; }
       .grid-2 { float: left; width: 48.5%; margin-bottom: 3%; }
-      .grid-2 + .grid-2 { margin-left: 3%; }
+      .grid-2:nth-of-type(2n+1) { margin-left: 3%; }
       @media screen and (max-width: 950px) {
         .grid-2 { float: none; width: auto; margin-bottom: 3%; }
         .grid-2 + .grid-2 { margin-left: inherit; }
@@ -117,6 +114,7 @@
         font-size: 3em;
         font-weight: 300;
         line-height: 1.1;
+        line-height: 1.3em;
       }
       .project p { font-size: 1.2em; }
       .project p:before {
@@ -136,10 +134,6 @@
       .project.dark p:before { background-color: rgba(255, 255, 255, 0.8); }
       .project.updown {
         background: #222 url("images/updown-back.jpg") no-repeat top center;
-        background-size: cover;
-      }
-      .project.defuzeme {
-        background: #222 url("images/defuzeme.png") no-repeat top center;
         background-size: cover;
       }
       .projects a { display: block; }
@@ -164,7 +158,6 @@
         text-transform: uppercase;
         margin: 1em 0 0 0;
       }
-      .skill svg { fill: rgba(0, 0, 0, 0.6); }
       #experience {
         padding: 4em 0;
         text-align: center;
@@ -238,6 +231,10 @@
         padding: 1em;
         display: inline-block;
       }
+      footer a svg path {
+        fill: <%= red %>;
+        transition: fill 0.2s;
+      }
       @media screen and (max-width: 550px) {
         body { font-size: 13px; }
         h1 { font-size: 3em; }
@@ -254,7 +251,7 @@
       </nav>
       <h1>Adrien Rey-Jarthon</h1>
       <hr>
-      <p>I'm a full stack <em>web&nbsp;developer</em>,<br />also passionate about&nbsp;<em>design</em>.</p>
+      <p>I'm a full stack <em>web developer</em>,<br />also passionate about <em>design</em>.</p>
     </header>
     <div id="work">
       <h2>work</h2>
@@ -264,8 +261,20 @@
             <div class="project dark updown">
               <h3>updown.io</h3>
               <p>
-                A website monitoring service (like Pingdom)<br/>
-                with a clean UI and a cheap pricing.
+                A website monitoring service (like Pingdom)<br/>
+                with a clean UI and a cheap pricing.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="grid-2">
+          <a href="https://github.com/jarthod/render-later" target="blank">
+            <div class="project render-later">
+              <h3><svg height="1024" width="1024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1000"><path d="M768 128H256L0 384l512 512 512-512L768 128zM128 384l192-192h384l192 192L512 768 128 384zM704 256H512v448l320-320L704 256z"/></svg> render-later</h3>
+              <p>
+                A ruby gem to defer rendering to<br />
+                the end of the page, without Ajax.
               </p>
             </div>
           </a>
@@ -274,10 +283,46 @@
         <div class="grid-2">
           <a href="https://github.com/intrepidd/working_hours" target="blank">
             <div class="project working_hours">
-              <h3>working hours</h3>
+              <h3><svg height="1024" width="1024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1000"><path d="M768 128H256L0 384l512 512 512-512L768 128zM128 384l192-192h384l192 192L512 768 128 384zM704 256H512v448l320-320L704 256z"/></svg> working_hours</h3>
               <p>
                 A modern ruby gem allowing to do time<br />
                 calculation with business / working hours.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="grid-2">
+          <a href="https://github.com/jarthod/ssl-test" target="blank">
+            <div class="project ssl-test">
+              <h3><svg height="1024" width="1024" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 1000"><path d="M768 128H256L0 384l512 512 512-512L768 128zM128 384l192-192h384l192 192L512 768 128 384zM704 256H512v448l320-320L704 256z"/></svg> ssl-test</h3>
+              <p>
+                A small ruby gem to help you test<br />
+                a website's SSL certificate.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="grid-2">
+          <a href="https://github.com/jarthod/mongo-log-replay" target="blank">
+            <div class="project mongo-log-replay">
+              <h3>mongo-log-replay</h3>
+              <p>
+                Parse MongoDB requests from ruby logs<br />
+                to replay them on another server.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="grid-2">
+          <a href="https://github.com/jarthod/bisect" target="blank">
+            <div class="project ssl-test">
+              <h3>bisect</h3>
+              <p>
+                A command line utility to quickly extract<br />
+                lines from huge log files (written in C).
               </p>
             </div>
           </a>
@@ -288,20 +333,8 @@
             <div class="project softfocus">
               <h3>softfocus.me</h3>
               <p>
-                A very simple website allowing you to<br />
+                A simple website allowing you to<br />
                 apply softfocus effect to your pictures.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="grid-1">
-          <a href="http://defuzeme.herokuapp.com" target="blank">
-            <div class="project dark defuzeme">
-              <h3>defuze.me</h3>
-              <p>
-                A complete radio automation suite<br/>
-                designed for simplicity.
               </p>
             </div>
           </a>
