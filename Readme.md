@@ -23,6 +23,7 @@ git add . && git commit -m "new version" && git push
 ## Changelog
 _(excluding minor design and content changes)_
 
+- 2022-02: Timeline update + add rdap / remove mongo-log-replay + minor tweaks
 - 2021-07: End of RC + add updown in timeline + couple fixes
 - 2020-03: v2 using simpler tools. Removing middleman, custom font, GA
 - 2015-04: Add timeline visualisation
