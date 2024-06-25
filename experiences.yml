@@ -1,10 +1,10 @@
-- title: 'French Baccalaureate, scientific section'
+- title: 'French Baccalaureate, scientific section 🎓'
   start_at: 2007-6-15
   end_at: 2007-6-15
   pos: right
   description: 'Equivalent to A levels with Honors'
 
-- title: 'Bronze medalist at the <a href="http://www.france-ioi.org/ioi/resultats.php">IOI 2007</a>'
+- title: '🥉 Bronze medalist at the <a href="https://www.france-ioi.org/olympiades/index.html">IOI 2007</a>'
   start_at: 2007-8-15
   end_at: 2007-8-15
   pos: left
@@ -16,7 +16,7 @@
   pos: right
   description: 'Advanced C programming, Raytracing, SQL, Shell, Parsers, AST'
 
-- title: 'Internship at <a href="http://wopata.com">Wopata</a>'
+- title: 'Internship at <a href="https://www.facebook.com/wopatahq">Wopata</a>'
   start_at: 2008-7-1
   end_at: 2008-12-21
   pos: left
@@ -26,7 +26,7 @@
   start_at: 2009-1-1
   end_at: 2009-7-31
   pos: right
-  description: 'PHP, HTML, CSS, Networking, Security, FTP, x86 ASM, <a href="http://sourceforge.net/projects/collision/">Multiplayer 3D Game</a>'
+  description: 'PHP, HTML, CSS, Networking, Security, FTP, x86 ASM, <a href="https://sourceforge.net/projects/collision/">Multiplayer 3D Game</a>'
 
 - title: 'Winning team at the “Codathlon” coding contest'
   start_at: 2009-4-15
@@ -40,13 +40,13 @@
   pos: right
   description: 'Advanced C++ programming, event loop, Qt GUI, FTP, more networking, audio streaming'
 
-- title: '(part-time) Developer at <a href="http://wopata.com">Wopata</a>'
+- title: '(part-time) Developer at <a href="https://www.facebook.com/wopatahq">Wopata</a>'
   start_at: 2010-1-5
   end_at: 2010-4-30
   pos: left
   description: 'Ruby, Rails, API, JSON, machine learning'
 
-- title: 'Internship at <a href="http://wopata.com">Wopata</a>'
+- title: 'Internship at <a href="https://www.facebook.com/wopatahq">Wopata</a>'
   start_at: 2010-5-3
   end_at: 2010-10-31
   pos: left
@@ -62,15 +62,15 @@
   start_at: 2010-11-1
   end_at: 2011-7-30
   pos: right
-  description: 'Artificial Intelligence, security, MASM32 malicious code, law, business, graduation project: <a href="https://eip.epitech.eu/2012/defuzeme/fr/index.html">defuze.me</a>'
+  description: 'Artificial Intelligence, security, MASM32 malicious code, law, business, graduation project: <a href="https://github.com/defuzeme">defuze.me</a>'
 
-- title: '(part-time) Internship at <a href="http://sgcib.com">SGCIB</a>'
+- title: '(part-time) Internship at <a href="https://wholesale.banking.societegenerale.com/fr/">SGCIB</a>'
   start_at: 2010-11-15
   end_at: 2011-7-15
   pos: left
   description: 'Quantitative trading support: automated trading (algorithm), support tools (C++ & Ruby) and trading strategy analysis'
 
-- title: '4<sup>th</sup> place at the <a href="https://campus.efrei.fr/campus/file.php/1/code-of-duty.jpg">Code of Duty</a> coding contest'
+- title: '4<sup>th</sup> place at the <a href="images/code-of-duty.jpg">Code of Duty</a> coding contest'
   start_at: 2011-8-30
   end_at: 2011-8-30
   pos: left
@@ -79,15 +79,15 @@
   start_at: 2011-9-1
   end_at: 2012-2-29
   pos: right
-  description: 'Learning agent, neural network, graduation project: <a href="https://eip.epitech.eu/2012/defuzeme/fr/index.html">defuze.me</a>'
+  description: 'Learning agent, neural network, graduation project: <a href="https://github.com/defuzeme">defuze.me</a>'
 
-- title: 'Winning project of the EIP trophy – <a href="https://eip.epitech.eu/2012/defuzeme/fr/index.html">defuze.me</a>'
+- title: 'Winning project of the EIP trophy – <a href="https://github.com/defuzeme">defuze.me</a>'
   start_at: 2011-11-18
   end_at: 2011-11-18
   pos: left
   description: 'The EIP trophy is organized by Epitech to reward the most promising projects.'
 
-- title: 'Developer at <a href="http://dimelo.com">Dimelo</a>'
+- title: 'Developer at <a href="https://www.ringcentral.com/ringcx/omnichannel.html">Dimelo</a>'
   start_at: 2012-3-1
   end_at: 2012-8-31
   pos: left
@@ -99,17 +99,17 @@
   pos: right
   description: 'e2midi is a hack made with a few friends. It has been selected to be demoed for the International Jazz Day at UNESCO.'
 
-- title: 'Lead Developer at <a href="http://dimelo.com">Dimelo</a>'
+- title: 'Lead Developer at <a href="https://www.ringcentral.com/ringcx/omnichannel.html">Dimelo</a>'
   start_at: 2012-10-01
   end_at: 2016-04-01
   pos: left
 
-- title: 'Head of R&D at <a href="http://dimelo.com">Dimelo</a>'
+- title: 'Head of R&D at <a href="https://www.ringcentral.com/ringcx/omnichannel.html">Dimelo</a>'
   start_at: 2016-04-02
   end_at: 2018-11-01
   pos: left
 
-- title: 'Senior Engineering Manager at <a href="https://ringcentral.com">RingCentral</a>'
+- title: 'Senior Engineering Manager at <a href="https://www.ringcentral.com/ringcx.html">RingCentral</a>'
   start_at: 2018-11-02
   end_at: 2021-06-30
   pos: left
@@ -118,24 +118,10 @@
 - title: 'Solo-Founder of <a href="https://updown.io">updown.io</a>'
   start_at: 2012-07-15
   pos: right
-  description: 'Ruby, Rails, UI/UX, Product, MongoDB, Advanced Networking, JS/CSS/HTML, API, WebHooks, Optimization & Scalability'
+  description: 'Ruby, Rails, Web UI/UX, Product design, Infrastructure, MongoDB, Advanced Networking, JS/CSS/HTML, API, WebHooks, Optimization & Scalability'
 
-# - title: 'Reached round 2 at the <a href="https://code.google.com/codejam/">Google Code Jam</a> 2013'
-#   start_at: 2013-06-7
-#   end_at: 2013-06-7
-#   pos: right
-
-# - title: 'Reached round 2 at the <a href="https://code.google.com/codejam/">Google Code Jam</a> 2014'
-#   start_at: 2014-06-10
-#   end_at: 2014-06-10
-#   pos: right
-
-# - title: 'Reached round 2 at the <a href="https://code.google.com/codejam/">Google Code Jam</a> 2015'
-#   start_at: 2015-05-30
-#   end_at: 2015-05-30
-#   pos: right
-
-# - title: 'Reached round 2 at the <a href="https://code.google.com/codejam/">Google Code Jam</a> 2016'
-#   start_at: 2016-05-28
-#   end_at: 2016-05-28
-#   pos: right
+- title: '🛩️ Private Pilot Licence'
+  start_at: 2022-12-19
+  end_at: 2022-12-19
+  pos: left
+  description: 'Obtained my Private Pilot Licence (PPL) so I can fly light aircrafts'
